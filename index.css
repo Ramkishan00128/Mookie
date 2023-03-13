@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@500&family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "iCiel-Cadena";
+  src: url("./font/font/iCiel-Cadena.ttf.woff") format("woff"),
+    url("./font/font/iCiel-Cadena.ttf.svg#iCiel-Cadena") format("svg"),
+    url("./font/font/iCiel-Cadena.ttf.eot");
+  /* url('iCiel-Cadena.ttf.eot?#iefix') format('embedded-opentype'); */
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+p {
+  font-family: "Inter";
+}
+
+#parallax {
+  position: relative;
+  background-image: url("/assets/images/parallax/trees.png"),
+    url("/assets/images/parallax/trunk.png"),
+    url("/assets/images/leaf_banner-bg.svg"),
+    url("/assets/images/header_banner.png"),
+    url("/assets/images/parallax/Cloud\ 13.png"),
+    url("/assets/images/parallax/Clould11.png"),
+    url("assets/images/parallax/Cloud\ 12.png");
+  background-repeat: no-repeat;
+  background-position: 60% 0%, 100% 180%, 100% 100%, 50% 0%, -5% 0%, 50% 0%,
+    100% 0%;
+  background-color: #ffe47a;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #parallax {
+    background-image: url("/assets/images/parallax/trees.png"),
+      url("/assets/images/parallax/trunk.png"),
+      url("/assets/images/leaf_banner-bg.svg"),
+      url("/assets/images/header_banner.png"),
+      url("/assets/images/parallax/Clould11.png");
+    background-position: 60% 0%, 100% 180%, 100% 100%, 50% 0%, 50% 0%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #parallax {
+    background-size: 0 0;
+  }
+}
+
+/* h1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Arial";
+  text-transform: uppercase;
+  opacity: 0.2;
+  font-size: 70px;
+} */
+/* .bg-img {
+  background-image: url("/assets/images/zinu-parallax-d1.webp"),
+    url("/assets/images/zinu-parallax-d2.webp"),
+    url("/assets/images/zinu-parallax-d3.webp"),
+    url("/assets/images/zinu-parallax-d6.webp"),
+    url("./assets/images/tokenmoney.png");
+  position: relative;
+  width: 100%;
+  background-size: 150%, 135%, 120%, 110%, 104%, 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: background-position 100ms ease;
+  aspect-ratio: 100/58;
+} */
+
+.container-one {
+  background: url("./assets/images/image_tokenomics.png") no-repeat,
+    linear-gradient(#fff2cf, white);
+  background-size: 100% 100%;
+  height: 1500px;
+
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container-one {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 499px) {
+  .mybg {
+    position: abolute;
+    /* background-image: url("./assets/images/mybg.svg"); */
+    background: url("./assets/images/header_banner.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .mybtn {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+  }
+  .mooky-character {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mygradient {
+    background: linear-gradient(
+      180deg,
+      #ffe47a 0%,
+      #ffd83f 34%,
+      #fff174 73%,
+      #ffd947 82%,
+      rgba(255, 187, 147, 0) 100%
+    );
+  }
+  .mybtn {
+    flex-direction: column;
+  }
+  .mooky-character {
+    display: block;
+  }
+}
+
+.accordion {
+  width: 100%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 30px;
+  transition: all 1s ease;
+
+}
+.accordion:hover {
+  box-shadow: 0px 0px 5px 0px rgb(143, 137, 137);
+}
+/* .accordion .accordion-title {
+  margin: 30px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 1.55rem;
+} */
+
+.accordion .content-container .question {
+  padding: 18px 30px 18px 0px;
+  /* font-size: 20px; */
+  cursor: pointer;
+  border-bottom: 1px solid #00000055;
+  position: relative;
+  font-weight: bold;
+}
+
+.accordion .content-container .question::after {
+  content: "\25BC";
+  position: absolute;
+  top: 40%;
+  right: 0;
+  color: #ec8424;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.accordion .content-container .answer {
+  padding-top: 10px;
+  padding-bottom: 2px;
+  /* font-size: 20px; */
+  line-height: 1.5;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  font-family: "Inter";
+  transition: 0.5s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* JavaScript Styling Link */
+
+.accordion .content-container.active .answer {
+height: 80px;
+}
+
+@media screen and (max-width:425px) {
+  .accordion .content-container.active .answer {
+    height: fit-content;
+    }
+}
+
+.accordion .content-container.active .question::after {
+  content: "\25B2";
+  /* content: "\21B1"; */
+  position: absolute;
+  top: 0;
+
+  color: #ec8424;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.btn {
+  transition: all 0.25s ease;
+  top: 0;
+}
+
+.btn:hover {
+  position: relative;
+  top: -3px;
+  box-shadow: 0px 8px 8px 2px rgb(105, 103, 103);
+}
+
+/* ----------------navigation================ */
+
+.topnav {
+  overflow: hidden;
+  background-color: #a85913;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  border-bottom: 1px solid #643205;
+}
+
+.topnav a.icon {
+  font-size: large;
+  display: block;
+  position: absolute;
+  left: 0;
+  border: none;
+  background: none;
+}
+
+#myLinks a:hover {
+  background-color: #643205;
+  color: white;
+}
+
+/* ==================== zoom mooky logo ========================= */
+.zoom-text {
+  animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* ======================= swing animation monkey ================ */
+
+.swing-mooky {
+  animation: swing 4s infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  transform-origin: top right;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+.animation-Hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+.animation-Hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.zooming {
+  animation-name: bye;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes bye {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}
+
+.header-logo-anim1 {
+  animation: animm 3s ease infinite;
+}
+/* -------------------nav logo animation------------- */
+.wiggle {
+  animation: wiggle 4s 2s infinite;
+}
+@keyframes wiggle {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.01);
+  }
+  20% {
+    transform: scale(1.01) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.01) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.01) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.01) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.01) rotate(0);
+  }
+}

@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/char.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
+    <title>MOOKY</title>
+  </head>
+  <body> 
+    <div  style="max-width: 1920px" class="mx-auto">
+  <div class="font-[inter]  ">
+    <!-- container 1920px ka -->
+    <div class="relative" 
+    >
+      <!-- --------- side bar -->
+      <div class="md:block hidden">
+        <div
+          class="absolute top-[200px] lg:left-[5%] md:left-0 grid items-center place-items-center z-50"
+        >
+          <p
+            style="writing-mode: vertical-lr"
+            class="font-bold uppercase tracking-wide"
+          >
+            Networks
+          </p>
+          <a href="" class="transition duration-500 hover:scale-125">
+            <img
+              src="./assets/icons/ethereum.png"
+              alt="ethereum"
+              class="pt-3 pb-3"
+            />
+          </a>
+          <a href="" class="transition duration-500 hover:scale-125">
+            <img src="./assets/icons/binance.png" alt="binance" class="py-2" />
+          </a>
+          <p
+            style="writing-mode: vertical-rl"
+            class="font-bold uppercase py-3 tracking-wide"
+          >
+            socials
+          </p>
+          <a href="" class="transition duration-500 hover:scale-125">
+            <img src="./assets/icons/twitter.png" alt="twitter" class="pt-3" />
+          </a>
+          <a href="" class="transition duration-500 hover:scale-125">
+            <img
+              src="./assets/icons/telegram.png"
+              alt="telegram"
+              class="py-3"
+            />
+          </a>
+          <a href="" class="transition duration-500 hover:scale-125">
+            <img src="./assets/icons/emoji.png" alt="emoji" class="py-2" />
+          </a>
+          <a href="" class="transition duration-500 hover:scale-125">
+            <img
+              src="./assets/icons/facebook.png"
+              alt="facebook"
+              class="py-3"
+            />
+          </a>
+        </div>
+      </div>
+      <!-- -------------- -->
+      <!-- hero section -->
+      <section
+      id="parallax"
+        class="md:pt-[31px] pt-[20px] relative lg:pb-44 "
+       
+      >
+        <div
+          class="absolute z-0 margin-auto leaf-move md:block hidden"
+          style="transition: all 0.2s linear"
+        >
+          <!-- <img src="./assets/images/header-background-bg.svg" alt="" /> -->
+        </div>
+        <div class="xl:mx-[15%] lg:mx-[10%] mx-[5%] z-10 isolate">
+          <!--  navbar -->
+          <nav
+            class="h-[78px] bg-no-repeat navbar1 lg:flex hidden font-bold font-[iCiel-Cadena]"
+            style="
+              background-image: url(./assets/images/header.svg);
+              background-size: 100% 100%;
+            "
+          >
+            <ul
+              class="grow flex items-center justify-evenly text-white font-bold text-[20px]"
+            >
+              <a href="#about" class="transition-all hover:scale-125">
+                <li class="cursor-pointer">About</li>
+              </a>
+              <a href="#tokenomics" class="transition-all hover:scale-125">
+                <li class="cursor-pointer">Tokenomics</li>
+              </a>
+              <a href="#Tree Map" class="transition-all hover:scale-125">
+                <li class="cursor-pointer"> Tree Map</li>
+              </a>
+
+              <img
+                src="./assets/images/MOOKY_whitelogo 1.svg"
+                alt=""
+                class="xl:h-[54px] lg:h-[40px] md:h-[35px] wiggle"
+              />
+
+              <a href="#News" class="transition-all hover:scale-125">
+                <li class="cursor-pointer">News</li>
+              </a>
+              <a href="#Faq" class="transition-all hover:scale-125">
+                <li class="cursor-pointer">FAQ</li>
+              </a>
+              <a href="./assets/pdf/MookyWhitePaper.pdf" class="transition-all hover:scale-125">
+                <li class="cursor-pointer">Greenpaper</li>
+              </a>
+            </ul>
+          </nav>
+          <!-- mobile navbar -->
+          <nav class="topnav navbar2 lg:hidden blcok">
+            <div
+              class="w-full bg-cover bg-no-repeat relative"
+              style="background-image: url('./assets/images/header.svg')"
+            >
+              <div class="flex py-3 items-center">
+                <img
+                  src="./assets/images/mooky.png"
+                  alt=""
+                  class="w-32 ml-auto mr-auto wiggle"
+                />
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="myFunction();"
+                >
+                  <!-- <i class="fa fa-bars"></i> -->
+                  <img src="./assets/icons/menu.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div id="myLinks" class=" ">
+              <a href="#about" class="border border-[#643205]">About</a>
+              <a href="#tokenomics mob">Tokenomics</a>
+              <a href="#Tree Map mob">Tree Map</a>
+              <a href="#News">News</a>
+              <a href="#Faq mob">FAQ</a>
+              <a href="./assets/pdf/MookyWhitePaper.pdf">Greenpaper</a>
+            </div>
+          </nav>
+          <!-- hero content -->
+          <div   class="flex items-center justify-center lg:flex-row flex-col  pt-28">
+            <div
+              class=" lg:w-1/2 lg:text-start text-center"
+              style="z-index: 1"
+            >
+              <h1
+                class="font-bold lg:text-[45px] text-[30px] lg:leading-[50px] leading-[40px]"
+                style="font-family: iCiel-Cadena"
+              >
+                The monkey who saved the tree’s through the blockchain.
+              </h1>
+              <p
+                class="py-5 leading-[20px] font-normal text-[16px] font-[Inter]"
+              >
+                Welcome to the world of MOOKY ! Join hundoranges of Web3
+                enthusiasts around the world and support MOOKY on his quest to
+                better the world by helping plant trees and supporting our
+                environment.
+              </p>
+              <div
+                class="w-full py-4 mybtn flex items-center gap-x-10 font-[Inter]"
+              >
+                <button
+                  class="bg-[#8c9700] shadow-md shadow-gray-500 bg-white text-black font-bold w-full md:mt-0 mt-5 py-3  text-[16px] rounded-lg transition-all duration-500 hover:-translate-y-2"
+                >
+                  Buy Now!
+                </button>
+                <button
+                  class="bg-[#8c9700] shadow-md shadow-gray-500 bg-white text-black font-bold w-full md:mt-0 mt-5 py-3  text-[16px] rounded-lg transition-all duration-500 hover:-translate-y-2"
+                >
+                  Chart
+                </button>
+              </div>
+              <!-- mobile mooky -->
+              <img
+                src="./assets/images/char.svg"
+                alt=""
+                class="md:hidden block"
+                
+              />
+              <div 
+                class="md:mt-[4rem] mb-[3rem] md:text-start text-center select-none"
+
+              >
+                <p class="text-[#5A5A5A] md:text-[20px] text-sm font-bold">
+                  TRUSTED AND LOVED BY 100+ COMMUNITIES </p>
+                <div class="grid grid-cols-3   gap-5 py-5 text-sm">
+                  <div
+                    class="flex justify-center items-center bg-white text-[#BABABA] py-2 rounded-lg text-center font-bold"
+                  >
+                  <img src="./assets/images/logoimages/trees.svg"/>
+                </div>
+                  <div
+                    class="flex justify-center items-center  bg-white text-[#BABABA] py-2 rounded-lg text-center font-bold"
+                  >
+                <img src="./assets/images/logoimages/national.svg"/>
+                  </div>
+                  <div
+                    class="flex justify-center items-center  bg-white text-[#BABABA] py-2 rounded-lg text-center font-bold"
+                  >
+                  <img src="./assets/images/logoimages/primarily.svg"/>
+                </div>
+                  <div
+                    class="flex justify-center items-center  bg-white text-[#BABABA] py-2 rounded-lg text-center font-bold"
+                  >
+                  <img src="./assets/images/logoimages/rainforest.svg"/>
+                </div>
+                  <div
+                    class="flex justify-center items-center  bg-white text-[#BABABA] py-2 rounded-lg text-center font-bold"
+                  >
+                  <img src="./assets/images/logoimages/onetreeplanted.svg"/>
+                </div>
+                  <div
+                    class="flex justify-center items-center  bg-white text-[#BABABA] py-2 rounded-lg text-center font-bold"
+                  >
+                  <img src="./assets/images/logoimages/survival.svg"/>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" lg:w-1/2 ">
+              <img
+                src="./assets/images/mookyheader-char.svg"
+                alt=""
+                class=" -mt-[65px] lg:hidden block"
+              />
+            </div>
+          </div>
+          
+          
+        </div>
+      
+      </section>
+      <!-- 4 card section -->
+      <section
+        class=" grid md:grid-cols-4 xl:mx-56 lg:mx-20 mx-8 gap-12 mt-8"
+      >
+        <div class="md:my-0 mt-20">
+          <div
+            class="relative h-[156px] rounded-lg"
+            style="
+              background: linear-gradient(180deg, #ffc28a 0%, #fff5ed 100%);
+              box-shadow: 0px 4px 4px rgba(139, 50, 50, 0.25);
+            "
+          >
+            <img
+              src="./assets/images/taidy.svg"
+              alt="monkey"
+              class="absolute bottom-0 left-[50%] -translate-x-1/2 w-[237px]"
+            />
+          </div>
+
+          <div class="text-center py-2">
+            <h2
+              class="font-bold text-[24px] uppercase"
+              style="font-family: iCiel-Cadena"
+            >
+              presale
+            </h2>
+            <p class="capitalize text-[16px] font-[Inter]">how to buy ?</p>
+          </div>
+        </div>
+        <div class="max-width-[275px]">
+          <div
+            class="relative bg-no-repeat bg-cover bg-center h-[156px] rounded-lg"
+            style="
+              background: linear-gradient(180deg, #ffc28a 0%, #fff5ed 100%);
+              box-shadow: 0px 4px 4px rgba(139, 50, 50, 0.25);
+            "
+          >
+            <img
+              src="./assets/images/audit.svg"
+              alt="audit"
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[226px]"
+            />
+          </div>
+
+          <div class="text-center py-2">
+            <h2
+              class="font-bold text-[24px] uppercase"
+              style="font-family: iCiel-Cadena"
+            >
+              audit
+            </h2>
+            <p class="capitalize text-[16px] font-[Inter]">mooky token audit</p>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="relative bg-no-repeat bg-cover bg-center h-[156px] rounded-lg flex justify-center items-center"
+            style="
+              background: linear-gradient(180deg, #ffc28a 0%, #fff5ed 100%);
+              box-shadow: 0px 4px 4px rgba(139, 50, 50, 0.25);
+              border-radius: 10px;
+            "
+          >
+          <img
+          src="./assets/images/kycsvg.svg"
+          alt="audit"
+          class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[226px]"
+        />          </div>
+
+          <div class="text-center py-2">
+            <h2
+              class="font-bold text-[24px] uppercase"
+              style="font-family: iCiel-Cadena; font-weight: 400"
+            >
+              kyc
+            </h2>
+            <p class="capitalize text-[16px] font-[Inter]">safe / rug free</p>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="relative bg-no-repeat bg-cover bg-center h-[156px] rounded-lg"
+            style="
+              background: linear-gradient(180deg, #ffc28a 0%, #fff5ed 100%);
+              box-shadow: 0px 4px 4px rgba(139, 50, 50, 0.25);
+              border-radius: 10px;
+            "
+          >
+            <img
+              src="./assets/images/greenpaperLayer.png"
+              alt="greenpaperLayer"
+              class="w-full h-full bg-contain book"
+            />
+            <img
+              src="./assets/images/greenpaper.png "
+              alt="greenpaper"
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[170px] book"
+            />
+          </div>
+
+          <div class="text-center py-2">
+            <h2
+              class="font-bold text-[24px] uppercase"
+              style="font-family: iCiel-Cadena"
+            >
+              greenpaper
+            </h2>
+            <p class="capitalize text-[16px] font-[Inter]">mooky greenpaper</p>
+          </div>
+        </div>
+      </section>
+      <!-- buy mooky section -->
+
+
+      <section class="xl:mx-[15%] lg:mx-[10%] mx-[5%]    ">
+        <div
+        id="about"
+
+          class="my-12 grid md:grid-cols-2 grid-cols-1 items-center md:text-start text-center"
+        >
+          <div 
+            class="lg:pr-28 md:pr-10 leading-[20px] font-normal text-[16px] font-[Inter] lg:text-start md:order-none order-last"
+          >
+            <h1
+              class="md:pt-0 pt-4 font-bold lg:text-[38px] text-[30px] lg:leading-[60px] leading-[40px]"
+              style="font-family: iCiel-Cadena"
+            >
+              How to buy MOOKY?
+            </h1>
+            <p class="pt-3">
+              MOOKY presale is currently in beta stage! Be an early adopter of
+              the cutest community owned defi memecoin coming to sweep the
+              market!
+            </p>
+            <p class="py-5">
+              Join the limited time presale and see why global media is talking
+              about Mooky! Learn more about the presale stages below!
+            </p>
+            <button
+              class="bg-[#EC8424] text-[16px] w-full md:w-[200px]  py-3 rounded-lg font-bold text-white my-2 transition-all duration-500 hover:-translate-y-2"
+              style="box-shadow: 5px 5px 8px #8d6327"
+            >
+              MOOKY Presale
+            </button>
+          </div>
+
+          <img
+            src="./assets/images/buy_mooky.svg"
+            alt="buy_mooky"
+            class="md:mt-0 mt-40"
+          />
+        </div>
+        <!-- mission mooky -->
+        <div
+          class="my-12 grid md:grid-cols-2 grid-cols-1 items-center md:text-start text-center"
+        >
+          <img
+            src="./assets/images/mooky_mission.svg"
+            alt="mooky_mission"
+            class=""
+          />
+
+          <div class="md:pl-12">
+            <h1
+              class="md:pt-0 pt-4 font-bold lg:text-[38px] text-[30px] lg:leading-[60px] leading-[40px]"
+              style="font-family: iCiel-Cadena"
+            >
+              Mooky’s Mission
+            </h1>
+            <p class="pt-4 leading-[20px] font-normal text-[16px] font-[Inter]">
+              MOOKY is the cutest and coolest meme token of 2023! We will be
+              helping plant tree’s globally with the aim to better our
+              environment and inspire change.
+            </p>
+            <p class="py-5 leading-[20px] font-normal text-[16px] font-[Inter]">
+              MOOKY is a community owned token with governance where the
+              community decides on a DAO vote how to run the operations! The
+              holders of the token are the ones who own the platform.
+            </p>
+            <button
+              class="bg-[#EC8424] w-full md:w-[200px]  text-[16px]  py-3 md:my-4 my-5 rounded-lg font-bold text-white my-2 transition-all duration-500 hover:-translate-y-2"
+              style="box-shadow: 5px 5px 8px #8d6327"
+            >
+              Greenpaper
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- curve -->
+      <div class="relative">
+        <div
+          class="absolute top-full h-32 w-full bg-[white] z-50"
+          style="clip-path: ellipse(56% 100% at 50% 0%); translate: 0 -45%"
+        ></div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--=============================================================================== For Mobile view mooky tokenmics===================================================================================================================================================================================================================================================================================================================================== -->
+<div id="tokenomics mob" class="w-full z-50 md:hidden blcok bg-[#fff2cf]">
+  <div class="relative border border-black">
+    <div
+      class="absolute top-full h-32 w-full bg-[white] z-50 isolate"
+      style="clip-path: ellipse(56% 100% at 50% 0%); translate: 0 -45%"
+    ></div>
+  </div>
+  <div class="text-center mt-28 px-5">
+    <h1
+      class="xl:text-[42px] text-3xl text-[#EC8424] font-bold font-[iCiel-Cadena]"
+    >
+      $MOOKY Tokenomics
+    </h1>
+    <p class="lg:px-10 px-2 py-3 text-sm">
+      Mooky is a 0% tax token meaning you will not have any slippage
+      requirements when buying or selling. Low tax tokens are the best
+      option for the community. Liquidity will be locked for 2 years. No
+      team tokens or VC / private sale.
+    </p>
+  </div>
+  <div
+    class="grid md:grid-cols-3 grid-cols-1 place-items-center text-center gap-4 md:py-0 py-5"
+  >
+    <div class="text-center">
+      <p class="text-[#EC8424] text-xl uppercase font-semibold">
+        total tokens
+      </p>
+      <p class="text-[40px] font-bold">10B</p>
+    </div>
+    <div class="text-center md:py-0 py-2">
+      <p class="text-[#EC8424] text-xl uppercase font-semibold">
+        presale
+      </p>
+      <p class="text-[40px] font-bold">65%</p>
+    </div>
+    <div class="text-center md:py-0 py-2">
+      <p class="text-[#EC8424] text-xl uppercase font-semibold">
+        Liquidity
+      </p>
+      <p class="text-[40px] font-bold">25%</p>
+    </div>
+    <div class="text-center md:py-0 py-2">
+      <p class="text-[#EC8424] text-xl uppercase font-semibold">
+        CEX / STAKING
+      </p>
+      <p class="text-[40px] font-bold">5%</p>
+    </div>
+    <div class="text-center md:py-0 py-2">
+      <p class="text-[#EC8424] text-xl uppercase font-semibold">
+        CHARITY
+      </p>
+      <p class="text-[40px] font-bold">2%</p>
+    </div>
+    <div class="text-center md:py-0 py-2">
+      <p class="text-[#EC8424] text-xl uppercase font-semibold">
+        RESERVES
+      </p>
+      <p class="text-[40px] font-bold">3%</p>
+    </div>
+  </div>
+  <p class="text-center lg:py-2 font-semibold md:block hidden">
+    0% Tax on Buy / Sell
+  </p>
+  <h2
+    class="text-center text-[#EC8424] text-sm md:py-2 lg:py-5 py-5 font-bold uppercase"
+  >
+    MOOKY Token is currently available here:
+  </h2>
+  <div class="grid md:grid-cols-3 grid-cols-1 gap-8 pb-5 px-5">
+    <button class="bg-white py-3 rounded-md">logo</button>   
+     <button class="bg-white py-3 rounded-md">logo</button>
+    <button class="bg-white py-3 rounded-md">logo</button>
+
+
+  </div>
+</div>
+
+<img
+
+  src="./assets/images/mobtokenmonise.png"
+
+  alt="tokenmonise"
+  class=" md:hidden block  w-full bg-[#fff2cf]"
+/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--=============================================================================== For desktop and tabs view mooky tokenmics===================================================================================================================================================================================================================================================================================================================================== -->
+
+
+      <div  class="md:block hidden relative bg-white" id="tokenomics">
+        <div  class="container-one pt-12   bg-[#fff2cf]" >
+          <div class=" relative pt-32 flex justify-center">
+            <div class=" text-center w-1/2 pb-2">
+              <h1
+                class="font-bold text-2xl lg:text-[38px] 2xl:text-[52px]  lg:leading-[60px] text-[#EC8424] font-bold font-[iCiel-Cadena]"
+              >
+                $MOOKY Tokenomics
+              </h1>
+              <p
+                class="text-center px-12  leading-6 md:text-sm lg:text-lg text-normal"
+              
+              >
+              Mooky is a 0% tax token meaning you will not have any slippage
+              requirements when buying or selling. Low tax tokens are the best
+              option for the community. Liquidity will be locked for 2 years.
+              No team tokens or VC / private sale.
+              </p>
+
+              <div
+                class="grid grid-cols-3 place-items-center text-center xl:gap-8 gap-5 lg:py-8 py-1 font-[Inter]"
+              >
+                <div class="text-center md:py-0 py-2">
+                  <p
+                    class="text-[#EC8424] lg:text-[16px] text-sm uppercase font-semibold"
+                  >
+                    total tokens
+                  </p>
+                  <p
+                    class="xl:text-[46px] lg:text-[30px] text-lg font-bold lg:py-2 xl:py-8"
+                  >
+                    10B
+                  </p>
+                </div>
+                <div class="text-center md:py-0 py-2">
+                  <p
+                    class="text-[#EC8424] lg:text-[16px] text-sm uppercase font-semibold"
+                  >
+                    presale
+                  </p>
+                  <p
+                    class="xl:text-[46px] lg:text-[30px] text-lg font-bold lg:py-2 xl:py-8"
+                  >
+                    65%
+                  </p>
+                </div>
+                <div class="text-center md:py-0 py-2">
+                  <p
+                    class="text-[#EC8424] lg:text-[16px] text-sm uppercase font-semibold"
+                  >
+                    Liquidity
+                  </p>
+                  <p
+                    class="xl:text-[46px] lg:text-[30px] text-lg font-bold lg:py-2 xl:py-8"
+                  >
+                    25%
+                  </p>
+                </div>
+                <div class="text-center md:py-0 py-2">
+                  <p
+                    class="text-[#EC8424] lg:text-[16px] text-sm uppercase font-semibold"
+                  >
+                    CEX / STAKING
+                  </p>
+                  <p
+                    class="xl:text-[46px] lg:text-[30px] text-lg font-bold lg:py-2 xl:py-8"
+                  >
+                    5%
+                  </p>
+                </div>
+                <div class="text-center md:py-0 py-2">
+                  <p
+                    class="text-[#EC8424] lg:text-[16px] text-sm uppercase font-semibold"
+                  >
+                    CHARITY
+                  </p>
+                  <p
+                    class="xl:text-[46px] lg:text-[30px] text-lg font-bold lg:py-2 xl:py-8"
+                  >
+                    2%
+                  </p>
+                </div>
+                <div class="text-center md:py-0 py-2">
+                  <p
+                    class="text-[#EC8424] lg:text-[16px] text-lg uppercase font-semibold"
+                  >
+                    RESERVES
+                  </p>
+                  <p
+                    class="xl:text-[46px] lg:text-[30px] text-lg font-bold lg:py-2 xl:py-8"
+                  >
+                    3%
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-center lg:text-[16px] 2xl:text-[24px] text-sm xl:py-2  2xl:py-0 font-semibold md:block hidden"
+              >
+                0% Tax on Buy / Sell
+              </p>
+              <h2
+                class=" py-2 xl:mt-12 2xl:text-[24px] font-semibold text-[#EC8424] uppercase font-[Inter]"
+              >
+                MOOKY Token is currently available here:
+              </h2>
+              <div
+                class=" flex justify-center items-center text-[#BABABA] 2xl:px-32 px-8 font-[900]"
+              >
+                <img src="./assets/images/greenlogo.svg" class="w-32"/>
+              </div>
+
+              <div class=" flex justify-center     md:mt-5    lg:mt-40 xl:mt-2 2xl:mt-0  ">
+               <!-- <img class=" w-[14rem] h-[16rem]   "  src="./assets/images/token.svg" alt="token" /> -->
+              </div>
+            </div>
+          
+            </div> 
+            <img class=" absolute bottom-0 right-20 w-52 h-54  " src="./assets/images/bnn1 1.svg"/>
+
+          </div>
+          <!-- <div class="flex mt-28 2xl:mt-[8rem] lg:mt-[12rem]  lg:mr-32 justify-end"> -->
+          <!-- </div> -->
+        </div> 
+      </div> 
+   
+
+     
+
+         
+        
+
+      <!-- 1,000 Unique 3D NFT’s -->
+      <section>
+       <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-x-12 xl:px-52 px-5 my-12 ">
+
+          <img src="./assets/images/3dnft.svg"/>  
+        <div
+          class="md:py-28 py-12 lg:px-0 md:text-start text-center lg:text-[20px] md:text-[18px] text-sm"
+        >
+          <h1
+            class="font-[iCiel-Cadena] font-bold lg:text-[38px] text-[30px] lg:leading-[50px] leading-[40px]"
+          >
+            1,000 Unique 3D NFT’s
+          </h1>
+
+          <p class="pt-4 leading-[20px] font-normal text-[16px] font-[Inter]">
+            Super unique 3D Mooky NFT’s that offer utility and ROI! Each NFT is
+            also connected to a real life planted tree that can be tracked. If
+            you hold a legendary or super rare you receive entry into the Mooky
+            Ventures club! Try your luck today! Mint one of our special NFT’s.
+          </p>
+          <button
+            class="bg-[#EC8424]  w-full md:w-[200px]  text-[16px]  py-3 mt-5 rounded-lg font-bold text-white my-2 transition-all duration-500 hover:-translate-y-2"
+            style="box-shadow: 5px 5px 8px #8d6327"
+          >
+            Coming Soon..
+          </button>
+        </div>
+      </div>
+        <!-- </div> -->
+      </section>
+      <!-- mooky vencher club -->
+      <section
+        class="lg:my-28 xl:mx-[15%] lg:mx-[10%] mx-[5%] grid items-center md:grid-cols-2 grid-cols-1"
+      >
+        <div
+          class="py-28  pt-12 md:text-start text-center lg:text-[20px] md:text-[18px] text-sm order-last md:order-none"
+        >
+          <h1
+            class="font-[iCiel-Cadena] font-bold lg:text-[38px] text-[30px] lg:leading-[50px] leading-[40px]"
+          >
+            Mooky Ventures Club
+          </h1>
+
+          <p class="pt-4 leading-[20px] font-normal text-[16px] font-[Inter]">
+            The Ventures club is a unique perk for legendary and super rare NFT
+            holders. Receive airdrops bi-monthly from our partnership platforms,
+            merchandise, and passive income from our investment portfolio. Track
+            it all through a dashboard!
+          </p>
+          <button
+            class="bg-[#EC8424] w-full md:w-[200px]   text-[16px]  py-3 mt-5 rounded-lg font-bold text-white my-2 transition-all duration-500 hover:-translate-y-2"
+            style="box-shadow: 5px 5px 8px #8d6327"
+          >
+          Coming Soon…          </button>
+        </div>
+
+        <img
+          src="./assets/images/mooky_venture.svg"
+          alt="mooky"
+          class=""
+        />
+      </section>
+      <!-- the team behind mooky card -->
+      <!-- curve -->
+      <div class="relative">
+        <div
+          class="absolute top-full h-32 w-full bg-[white] z-50"
+          style="clip-path: ellipse(56% 100% at 50% 0%); translate: 0 -45%"
+        ></div>
+      </div>
+      <section>
+        <div
+          class="relative   w-full bg-[#fff2cf]  bg-no-repeat flex items-center flex-col pt-20 "
+        >
+          <!-- <div
+            class="absolute top-full h-32 w-full bg-[#fff2cf] z-10"
+            style="clip-path: ellipse(56% 100% at 50% 0%); translate: 0 -45%"
+          ></div> -->
+
+          <img
+            src="./assets/images/bnna-half.svg"
+            alt="bnana-half"
+            class="absolute top-0 left-5 lg:-translate-y-20 z-60 lg:h-40 h-20 md:block hidden z-50"
+          />
+          <img
+            src="./assets/images/bnn3.png"
+            alt="banana"
+            class="absolute lg:right-56 md:right-3 lg:-bottom-40 -bottom-20 z-30 lg:h-[250px] h-28 md:block hidden"
+          />
+          <div
+            class="flex justify-center items-center text-center flex-col  z-20 translate-y-20"
+          >
+            <h1
+              class="md:block hidden text-[#EC8424] font-[iCiel-Cadena] font-bold lg:text-[38px] text-[30px] lg:leading-[50px] leading-[40px]"
+            >
+            Partners
+            </h1>
+            <img src="./assets/images/parters.png" class="md:block hidden"/>
+            <img src="./assets/images/mobpartner.png" class="md:hidden bolck"/>
+
+            <!-- <p class="pt-4 leading-[20px] font-normal text-[16px] font-[Inter]">
+              Experienced team of developers, marketers and designers with over
+              20+ years<br />
+              combined experienced in Web3.
+            </p> -->
+          </div>
+          <!-- <div
+            class="mx-auto md:w-auto w-full grid  lg:grid-cols-3 xl:grid-cols-4  md:grid-cols-2 grid-cols-1  gap-12 mt-5"
+          >
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-white p-2 shadow-sm shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div class="bg-[#464646] text-white p-3 rounded-md w-full">
+                <p class="capitalize font-[700]">lorem ispum</p>
+                <p class="text-[#9E9E9E] uppercase">ceo</p>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-white p-2 shadow-sm shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div class="bg-[#464646] text-white p-3 rounded-md w-full">
+                <p class="capitalize font-[700]">lorem ispum</p>
+                <p class="text-[#9E9E9E] uppercase text-sm">
+                  head of development
+                </p>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-white p-2 shadow-sm shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div class="bg-[#464646] text-white p-3 rounded-md w-full">
+                <p class="capitalize font-[700]">lorem ispum</p>
+                <p class="text-[#9E9E9E] uppercase">head of design</p>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px]  w-full bg-white p-2 shadow-sm shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div class="bg-[#464646] text-white p-3 rounded-md w-full">
+                <p class="capitalize font-[700]">lorem ispum</p>
+                <p class="text-[#9E9E9E] uppercase text-sm">
+                  head of marketing
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+
+      <section class="" id="Tree Map">
+        <div
+          class=" relative  bg-[url(./assets/images/treemapsFrame.png)] bg-cover bg-no-repeat  md:flex justify-center items-center flex-col py-28 md:blcok hidden"
+        >
+          <!-- <div
+            class="absolute top-full h-32 w-full bg-[#A4523B] z-10"
+            style="clip-path: ellipse(56% 100% at 50% 0%); translate: 0 -45%"
+          ></div> -->
+          <div class="py-5 text-center">
+            <h1
+              class="text-white font-[iCiel-Cadena] font-bold lg:text-[38px] text-[30px] lg:leading-[50px] leading-[40px]"
+            >
+              Mooky’s Tree Map
+            </h1>
+            <p
+              class="leading-[20px] font-normal text-[16px] font-[Inter] text-white pt-4"
+            >
+              Treemap for MOOKY and his mission to success through the jungle!
+            </p>
+          </div>
+          <img src="./assets/images/treemaps.svg" alt="tree1" />
+        </div>
+        <!-- mobile -->
+        <div id="Tree Map mob" class="md:hidden  bg-[url(./assets/images/treemapsFrame.png)] bg-cover bg-no-repeat  block py-16">
+          <div class="py-5 px-5 text-center">
+            <h1
+              class="text-white text-3xl font-bold font-[iCiel-Cadena] leading-[50px]"
+            >
+              Mooky’s Tree Map
+            </h1>
+            <p class="pt-4 text-white text-sm">
+              Treemap for MOOKY and his misison to success through the jungle!
+            </p>
+          </div>
+          <div class="flex justify-center flex-col">
+            <img src="./assets/images/mobtreemap.png" alt="tree" />
+            
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-------------------------------------------------------------------------- mooky's tree maps -->
+     
+     
+     
+      <!-- -- -->
+      <section>
+        <div
+        id="News"
+          class="relative w-full bg-[#FFF2CF] flex justify-center items-center flex-col md:py-20 py-10 xl:px-0 lg:px-28 md:px-12 px-5"
+        >
+          <div
+            class="absolute top-full h-32 w-full bg-[#FFF2CF] z-50"
+            style="clip-path: ellipse(56% 100% at 50% 0%); translate: 0 -45%"
+          ></div>
+
+          <div
+            class="py-12 h-10 text-center lg:text-[20px] md:text-[18px] text-sm"
+          >
+            <h1
+              class="md:block hidden text-[#EC8424] font-[iCiel-Cadena] font-bold lg:text-[38px] text-[30px] lg:leading-[50px] leading-[40px]"
+            >
+              MOOKY Media / Press Release
+            </h1>
+            <h1
+              class="md:hidden block text-[#EC8424] font-[iCiel-Cadena] font-bold lg:text-[38px] text-[30px] lg:leading-[50px] leading-[40px]"
+            >
+              mooky in the news
+            </h1>
+            <p class="pt-4 leading-[20px] font-normal text-[16px] font-[Inter]">
+              Coverage from major publications and media outlets. Mooky is
+              making headlines daily as the next big meme <br />/ charity token
+              project of 2023!
+            </p>
+          </div>
+
+          <div
+            class="mx-auto  grid grid  lg:grid-cols-3 xl:grid-cols-4  md:grid-cols-2 grid-cols-1  md:gap-x-10   gap-y-5 gap-y-5 mt-[150px]  rounded-md"
+          >
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-[url('./assets/images/mooky-media.png')] bg-cover bg-no-repeat p-2  shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div
+                class="bg-[rgba(0,0,0,0.8)] text-white p-3 rounded-md w-full"
+              >
+                <p class="capitalize text-[13px]">dec 23 ,2022</p>
+                <p class="uppercase text-[12px] font-[700]">
+                  Lorem Ipsum is simply dummy text of the printing ...
+                </p>
+                <div class="text-[#EC8424] flex items-center">
+                  <span>read more</span>
+                  <img src="./assets/icons/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-[url('./assets/images/mooky-media.png')] bg-cover bg-no-repeat   p-2  shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div
+                class="bg-[rgba(0,0,0,0.8)] text-white p-3 rounded-md w-full"
+              >
+                <p class="capitalize text-[13px]">dec 23 ,2022</p>
+                <p class="uppercase text-[12px] font-[700]">
+                  Lorem Ipsum is simply dummy text of the printing ...
+                </p>
+                <div class="text-[#EC8424] flex items-center">
+                  <span>read more</span>
+                  <img src="./assets/icons/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-[url('./assets/images/mooky-media.png')] bg-cover bg-no-repeat p-2  shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div
+                class="bg-[rgba(0,0,0,0.8)] text-white p-3 rounded-md w-full"
+              >
+                <p class="capitalize text-[13px]">dec 23 ,2022</p>
+                <p class="uppercase text-[12px] font-[700]">
+                  Lorem Ipsum is simply dummy text of the printing ...
+                </p>
+                <div class="text-[#EC8424] flex items-center">
+                  <span>read more</span>
+                  <img src="./assets/icons/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-[url('./assets/images/mooky-media.png')] bg-cover bg-no-repeat p-2  shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div
+                class="bg-[rgba(0,0,0,0.8)] text-white p-3 rounded-md w-full"
+              >
+                <p class="capitalize text-[13px]">dec 23 ,2022</p>
+                <p class="uppercase text-[12px] font-[700]">
+                  Lorem Ipsum is simply dummy text of the printing ...
+                </p>
+                <div class="text-[#EC8424] flex items-center">
+                  <span>read more</span>
+                  <img src="./assets/icons/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-[url('./assets/images/mooky-media.png')] bg-cover bg-no-repeat p-2  shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div
+                class="bg-[rgba(0,0,0,0.8)] text-white p-3 rounded-md w-full"
+              >
+                <p class="capitalize text-[13px]">dec 23 ,2022</p>
+                <p class="uppercase text-[12px] font-[700]">
+                  Lorem Ipsum is simply dummy text of the printing ...
+                </p>
+                <div class="text-[#EC8424] flex items-center">
+                  <span>read more</span>
+                  <img src="./assets/icons/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-[url('./assets/images/mooky-media.png')] bg-cover bg-no-repeat p-2  shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div
+                class="bg-[rgba(0,0,0,0.8)] text-white p-3 rounded-md w-full"
+              >
+                <p class="capitalize text-[13px]">dec 23 ,2022</p>
+                <p class="uppercase text-[12px] font-[700]">
+                  Lorem Ipsum is simply dummy text of the printing ...
+                </p>
+                <div class="text-[#EC8424] flex items-center">
+                  <span>read more</span>
+                  <img src="./assets/icons/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-[url('./assets/images/mooky-media.png')] bg-cover bg-no-repeat p-2  shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div
+                class="bg-[rgba(0,0,0,0.8)] text-white p-3 rounded-md w-full"
+              >
+                <p class="capitalize text-[13px]">dec 23 ,2022</p>
+                <p class="uppercase text-[12px] font-[700]">
+                  Lorem Ipsum is simply dummy text of the printing ...
+                </p>
+                <div class="text-[#EC8424] flex items-center">
+                  <span>read more</span>
+                  <img src="./assets/icons/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div
+              class=" h-[486px] md:h-[380px] md:w-[250px] w-full bg-[url('./assets/images/mooky-media.png')] bg-cover bg-no-repeat p-2  shadow-gray-500 rounded-xl flex items-end cursor-pointer transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#b69484]"
+            >
+              <div
+                class="bg-[rgba(0,0,0,0.8)] text-white p-3 rounded-md w-full"
+              >
+                <p class="capitalize text-[13px]">dec 23 ,2022</p>
+                <p class="uppercase text-[12px] font-[700]">
+                  Lorem Ipsum is simply dummy text of the printing ...
+                </p>
+                <div class="text-[#EC8424] flex items-center">
+                  <span>read more</span>
+                  <img src="./assets/icons/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:px-8 md:py-0 py-3 flex justify-center">
+            <button
+              class="bg-[#EC8424] w-full md:w-[200px]  text-[16px] py-3 mt-5 rounded-lg font-bold text-white my-2 transition-all duration-500 hover:-translate-y-2"
+              style="box-shadow: 5px 5px 8px #8d6327"
+            >
+              Read News
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- freqently asked question -->
+      <section id="Faq">
+        <div
+          class="lg:block hidden relative 2xl:h-[1280px] h-[1000px] w-full z-40"
+          style="
+            background: url(./assets/images/bg-question.png) center/cover
+                no-repeat,
+              url(./assets/images/leafs.png) left top/500px no-repeat;
+          "
+        >
+          <div>
+            <img
+              src="./assets/images/leaf.svg"
+              alt=""
+              class="absolute xl:left-[27%] lg:left-[22%] md:left-[25%] z-10 lg:h-48 md:h-44"
+            />
+
+            <div;
+              class="swing-card   absolute 2xl:top-[13%] lg:top-[16%] md:top-[15%] sm:top-[15%] top-[25%] xl:left-[20%] lg:left-[23%] left-[15%] -translate-x-1/4 rounded-3xl bg-[#FFF2CF] xl:w-[35%] lg:w-[45%] md:w-[55%] w-[60%] py-8 px-4 shadow-xl font-[inter]"
+            >
+              <div
+                class="flex  justify-center flex-col text-center xl:py-5 py-1 z-50"
+              >
+                <h1
+                  class="text-[#EC8424] font-[iCiel-Cadena] font-bold lg:text-[38px] text-[30px] lg:leading-[50px] leading-[40px]"
+                >
+                  Frequently Asked Questions
+                </h1>
+                <p
+                  class="pt-4 leading-[20px] font-normal text-[16px] font-[Inter]"
+                >
+                  We love helping friends and family of MOOKY. <br />Let us
+                  answer all of your questions 1 by 1.
+                </p>
+              </div>
+              <div>
+                <div class="accordion text-sm font-[Inter]">
+                  <div class="content-container">
+                    <div class="question">
+                      What is $MOOKY?
+                    </div>
+                    <div class="answer">
+                      $MOOKY is a meme token which helps planting trees by donating to charity. It is a community owned token with governance where the community decides on a DAO vote how to run the operations.
+
+                    </div>
+                  </div>
+                  <div class="content-container">
+                    <div class="question">
+                      Which Network/Chain is $MOOKY available on?
+                    </div>
+                    <div class="answer">
+                      $MOOKY is available on Ethereum & Binance Smart Chain networks.
+
+                    </div>
+                  </div>
+                  <div class="content-container">
+                    <div class="question">
+                      How many stages will be there in $MOOKY Presale?
+                    </div>
+                    <div class="answer">
+                      $MOOKY presale will have 10 stages in total.
+
+                    </div>
+                  </div>
+                  <div class="content-container">
+                    <div class="question">
+                      Is there any Tax?
+                    </div>
+                    <div class="answer">
+                      There is no tax on buying/selling or transferring $MOOKY.
+
+                    </div>
+                  </div>
+                  <span class="text-sm font-[Inter]"
+                    >Still have any question? </span
+                  ><a
+                    href=""
+                    class="text-[#EC8424] text-sm font-[Inter] hover:font-bold hover:text-[#EC8411]"
+                    >Join our channel and ask</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap">
+              <img
+                src="./assets/images/illu_monkey.png"
+                alt="mookey swing"
+                class="absolute right-0 top-0 md:block hidden lg:h-[500px] 2xl:h-auto swing-mooky"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- mobile -->
+        <div class="lg:hidden block" >
+          <img src="./assets/images/illu_monkey.png" alt="" class="swing-mooky" />
+          <div id="Faq mob"
+            class="mx-2 pb-5 px-5 rounded-lg bg-[#FFF2CF] shadow-xl font-[inter] flex flex-col justify-center absolute"
+          >
+            <div 
+              class="flex justify-center flex-col text-center xl:py-5 py-5 z-50"
+            >
+              <h1
+                class="text-[#EC8424] font-[iCiel-Cadena] font-bold lg:text-[38px] text-[30px] lg:leading-[50px] leading-[40px]"
+              >
+                Frequently Asked Questions
+              </h1>
+              <p class="text-sm">
+                We love helping friends and family of MOOKY. Let us answer all
+                of your questions 1 by 1.
+              </p>
+            </div>
+            <div>
+              <div class="accordion text-sm font-[Inter]">
+                  <div class="content-container">
+                    <div class="question">
+                      What is $MOOKY?
+                    </div>
+                    <div class="answer">
+                      $MOOKY is a meme token which helps planting trees by donating to charity. It is a community owned token with governance where the community decides on a DAO vote how to run the operations.
+
+                    </div>
+                  </div>
+                  <div class="content-container">
+                    <div class="question">
+                      Which Network/Chain is $MOOKY available on?
+                    </div>
+                    <div class="answer">
+                      $MOOKY is available on Ethereum & Binance Smart Chain networks.
+
+                    </div>
+                  </div>
+                  <div class="content-container">
+                    <div class="question">
+                      How many stages will be there in $MOOKY Presale?
+                    </div>
+                    <div class="answer">
+                      $MOOKY presale will have 10 stages in total.
+
+                    </div>
+                  </div>
+                  <div class="content-container">
+                    <div class="question">
+                      Is there any Tax?
+                    </div>
+                    <div class="answer">
+                      There is no tax on buying/selling or transferring $MOOKY.
+
+                    </div>
+                  </div>
+                  <span class="text-sm font-[Inter]"
+                    >Still have any question? </span
+                  ><a
+                    href=""
+                    class="text-[#EC8424] text-sm font-[Inter] hover:font-bold hover:text-[#EC8411]"
+                    >Join our channel and ask</a
+                  >
+                </div>
+            </div>
+          </div>
+          <img
+            src="./assets/images/question-bgm.svg"
+            alt=""
+            class="block ml-auto mr-auto w-full h-[800px] z-0"
+          />
+        </div>
+      </section>
+      <section>
+        <!-- ===================== Follow us for more information ====================== -->
+        <div
+          class="w-full bg-[#FFF2CF] flex lg:flex-row flex-col justify-center2xl:px-56 xl:px-32 lg:px-28 md:px-12 lg:py-28 py-20 py-10 md:-mt-20 sm:-mt-28 -mt-64"
+        >
+          <div class="lg:col-md-3 lg:self-end md:block hidden">
+            <img
+              src="./assets/images/monkey_read.svg"
+              alt="monkey"
+              class="xl:scale-[1.2] lg:scale-[1.5] -ml-8"
+            />
+          </div>
+
+          <div
+            class="flex items-center flex-col justify-center self-end md:py-10 py-12 md:px-5 px-3 text-center"
+          >
+            <h1
+              class="text-[#EC8424] font-[iCiel-Cadena] font-bold lg:text-[38px] text-[30px] lg:leading-[50px] leading-[40px]"
+            >
+              Follow us for more information
+            </h1>
+            <p class="py-5 leading-[20px] font-normal text-[16px] font-[Inter]">
+              We would really love if you follow all of our socials and give us
+              a shout out. Be a good friend, no monkey business!
+            </p>
+            <div class="flex md:gap-10 gap-8 px-5 mt-12">
+              <div
+                class="xl:w-[100px] xl:h-[100px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
+              >
+                <a class="p-2">
+                  <img
+                    src="./assets/icons/twitter1.png"
+                    alt=""
+                    class="object-contain"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="xl:w-[100px] xl:h-[100px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
+              >
+                <a class="p-2">
+                  <img
+                    src="./assets/icons/telegram1.png"
+                    alt=""
+                    class="object-contain"
+                  />
+                </a>
+              </div>
+              <div
+                class="xl:w-[100px] xl:h-[100px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
+              >
+                <a class="p-2">
+                  <img
+                    src="./assets/icons/discord.png"
+                    alt=""
+                    class="object-contain"
+                  />
+                </a>
+              </div>
+              <div
+                class="xl:w-[100px] xl:h-[100px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
+              >
+                <a class="p-2">
+                  <img
+                    src="./assets/icons/facebook1.png"
+                    alt=""
+                    class="lg:w-auto w-5"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-md-3 md:self-end md:-translate-x-5 md:block hidden"
+          >
+            <img src="./assets/images/illu.svg" alt="illu" class="mooky-toys" />
+          </div>
+          <img
+            src="./assets/images/pic.svg"
+            alt=""
+            class="md:hidden block p-2 mooky-toys-mob"
+          />
+        </div>
+      </section>
+      <footer>
+        <div
+          class="w-full pb-12 bg-[#A4523B] leading-[20px] font-normal text-[17px] font-[Inter]"
+        >
+          <div
+            class="grid grid-cols-2 lg:py-20 py-8 xl:px-44 lg:px-28 md:px-12 px-5 md:grid-cols-5 capitalize border border-[#C7684D]"
+          >
+            <div class="">
+              <h2 class="mb-6 font-semibold text-white">Information</h2>
+              <ul class="text-[#D9BCB4]">
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Presale
+                  </a>
+                </li>
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >NFTs</a
+                  >
+                </li>
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Etherscan</a
+                  >
+                </li>
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Charity</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 font-semibold text-white">Links</h2>
+              <ul class="text-[#D9BCB4]">
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Greenpaper</a
+                  >
+                </li>
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Audit
+                  </a>
+                </li>
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]">KYC</a>
+                </li>
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Sweepstakes</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 font-semibold text-white">Resources</h2>
+              <ul class="text-[#D9BCB4]">
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Cookie Policy</a
+                  >
+                </li>
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Careers/Team</a
+                  >
+                </li>
+                <li class="mb-4 lg:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-span-2">
+              <h2 class="mb-6 font-semibold text-white">Subscrible</h2>
+              <ul class="text-[#D9BCB4]">
+                <li class="mb-4 md:py-2">
+                  <a href="" class="transition-all hover:text-[#EC8424]"
+                    >Subscribe to the MOOKY newsletter for updates and
+                    information.
+                  </a>
+                </li>
+                <form class="flex gap-2 xl:flex-row flex-col">
+                  <input
+                    type="text"
+                    placeholder="Enter your email"
+                    class="bg-[#D2826B] rounded outline-none border-none px-3 md:py-2 py-4 leading-[20px] font-normal text-[16px] font-[Inter] md:text-start text-center text-white placeholder-[#A4523B]"
+                  />
+                  <button
+                    type="button"
+                    class="inline-block px-6 md:py-2.5 py-4 bg-[#EC8424] text-white font-medium md:text-lg leading-[20px] font-normal text-[16px] font-[Inter] leading-tight rounded shadow-md hover:bg-[#EC8424] hover:shadow-lg focus:bg-[#EC8415] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#c97114] active:shadow-lg transition duration-150 ease-in-out"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="xl:px-44 lg:px-28 md:px-12 px-5 lg:py-5 py-16 md:flex md:items-center md:justify-between"
+          >
+            <div class="flex justify-center flex-col">
+              <img src="./assets/images/footer-mooky.svg" alt="" class="h-10" />
+              <span
+                class="leading-[20px] font-normal text-[17px] font-[Inter] py-5 text-white md:text-start text-center"
+              >
+                All rights reserved by Mooky.
+              </span>
+            </div>
+            <div
+              class="flex mt-4 space-x-6 md:justify-start justify-center md:mt-0"
+            >
+              <a
+                href=""
+                class="p-3 bg-[#EC8424] rounded-lg transition duration-500 hover:scale-125"
+              >
+                <img
+                  src="./assets/icons/twitterf.png"
+                  alt=""
+                  class="text-[#ffffff]"
+                />
+              </a>
+              <a
+                href=""
+                class="p-3 bg-[#EC8424] rounded-lg transition duration-500 hover:scale-125"
+              >
+                <img src="./assets/icons/telegramf.png" alt="" />
+              </a>
+              <a
+                href=""
+                class="p-3 bg-[#EC8424] rounded-lg transition duration-500 hover:scale-125"
+              >
+                <img src="./assets/icons/emojif.png" alt="" class="" />
+              </a>
+              <a
+                href=""
+                class="px-5 py-3 bg-[#EC8424] rounded-lg transition duration-500 hover:scale-125"
+              >
+                <img src="./assets/icons/facebookf.png" alt="" class="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
+<!--             
+   
+-->
