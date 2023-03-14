@@ -1,3 +1,24 @@
+let menuOpenbBtn = document.getElementById("menuopen");
+let closebtn = document.getElementById("closebtn");
+let blurbg = document.getElementById("blurbg");
+menuOpenbBtn.addEventListener("click", open);
+closebtn.style.display = "none";
+function open() {
+  menuOpenbBtn.style.display = "none";
+  blurbg.style.background = "rgba(0, 0, 0, 0.5)";
+  closebtn.style.display = "block";
+}
+closebtn.addEventListener("click", close);
+
+function close() {
+  menuOpenbBtn.style.display = "block";
+  blurbg.style.background = "";
+
+  closebtn.style.display = "none";
+}
+
+// ------------------------------parallax effect -------------------
+
 const accordion = document.querySelectorAll(".content-container");
 
 for (let i = 0; i < accordion.length; i++) {
@@ -58,5 +79,3 @@ function myFunction() {
     elem.style.backgroundPosition = x;
   }
 })();
-
-

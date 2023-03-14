@@ -29,6 +29,7 @@
   </head>
   <body> 
     <div  style="max-width: 1920px" class="mx-auto">
+
   <div class="font-[inter]  ">
     <!-- container 1920px ka -->
     <div class="relative" 
@@ -86,19 +87,20 @@
       <!-- hero section -->
       <section
       id="parallax"
-        class="md:pt-[31px] pt-[20px] relative lg:pb-44 "
+        class=" relative md:pt-[31px] relative lg:pb-44 "
        
       >
+      <div class="absolute inset-0 " id="blurbg"></div>
         <div
           class="absolute z-0 margin-auto leaf-move md:block hidden"
           style="transition: all 0.2s linear"
         >
           <!-- <img src="./assets/images/header-background-bg.svg" alt="" /> -->
         </div>
-        <div class="xl:mx-[15%] lg:mx-[10%] mx-[5%] z-10 isolate">
-          <!--  navbar -->
+        <div class="xl:mx-[15%] lg:mx-[10%] md:mx-8 z-10 isolate ">
+          <!-- dekstop   navbar -->
           <nav
-            class="h-[78px] bg-no-repeat navbar1 lg:flex hidden font-bold font-[iCiel-Cadena]"
+            class="h-[78px] bg-no-repeat navbar1 md:flex hidden font-bold font-[iCiel-Cadena]"
             style="
               background-image: url(./assets/images/header.svg);
               background-size: 100% 100%;
@@ -120,7 +122,7 @@
               <img
                 src="./assets/images/MOOKY_whitelogo 1.svg"
                 alt=""
-                class="xl:h-[54px] lg:h-[40px] md:h-[35px] wiggle"
+                class="xl:h-[50px] lg:h-[40px] md:h-[35px] wiggle"
               />
 
               <a href="#News" class="transition-all hover:scale-125">
@@ -135,7 +137,7 @@
             </ul>
           </nav>
           <!-- mobile navbar -->
-          <nav class="topnav navbar2 lg:hidden blcok">
+          <nav class="topnav md:hidden blcok " >
             <div
               class="w-full bg-cover bg-no-repeat relative"
               style="background-image: url('./assets/images/header.svg')"
@@ -152,12 +154,14 @@
                   onclick="myFunction();"
                 >
                   <!-- <i class="fa fa-bars"></i> -->
-                  <img src="./assets/icons/menu.png" alt="" />
+                  <img src="./assets/icons/menu.png" alt="menuicon"  id="menuopen" onclick="open"/>
+                  <img src="./assets/icons/x-button.png" alt="close"  class="w-5" id="closebtn" onclick="close"/>
+               
                 </a>
               </div>
             </div>
-            <div id="myLinks" class=" ">
-              <a href="#about" class="border border-[#643205]">About</a>
+            <div id="myLinks" class=" absolute left-0 top-12 w-full z-20 py-14">
+              <a href="#about" class="">About</a>
               <a href="#tokenomics mob">Tokenomics</a>
               <a href="#Tree Map mob">Tree Map</a>
               <a href="#News">News</a>
@@ -166,9 +170,9 @@
             </div>
           </nav>
           <!-- hero content -->
-          <div   class="flex items-center justify-center lg:flex-row flex-col  pt-28">
+          <div   class="flex items-center md:justify-start justify-center md:flex-row flex-col  xl:pt-28 pt-8 px-5">
             <div
-              class=" lg:w-1/2 lg:text-start text-center"
+              class=" md:w-1/2  md:text-start text-center"
               style="z-index: 1"
             >
               <h1
@@ -186,7 +190,7 @@
                 environment.
               </p>
               <div
-                class="w-full py-4 mybtn flex items-center gap-x-10 font-[Inter]"
+                class="w-full  mybtn flex items-center gap-x-10 font-[Inter]"
               >
                 <button
                   class="bg-[#8c9700] shadow-md shadow-gray-500 bg-white text-black font-bold w-full md:mt-0 mt-5 py-3  text-[16px] rounded-lg transition-all duration-500 hover:-translate-y-2"
@@ -203,11 +207,11 @@
               <img
                 src="./assets/images/char.svg"
                 alt=""
-                class="md:hidden block"
+                class="md:hidden block w-full"
                 
               />
               <div 
-                class="md:mt-[4rem] mb-[3rem] md:text-start text-center select-none"
+                class="xl:mt-[8rem] md:mt-[4rem] mb-[3rem] md:text-start text-center select-none"
 
               >
                 <p class="text-[#5A5A5A] md:text-[20px] text-sm font-bold">
@@ -251,7 +255,7 @@
               <img
                 src="./assets/images/mookyheader-char.svg"
                 alt=""
-                class=" -mt-[65px] lg:hidden block"
+                class=" -mt-[65px] md:hidden block"
               />
             </div>
           </div>
@@ -398,12 +402,14 @@
               Join the limited time presale and see why global media is talking
               about Mooky! Learn more about the presale stages below!
             </p>
+            <a href="https://mooky-frontend-frontend-dev.vercel.app/">
             <button
               class="bg-[#EC8424] text-[16px] w-full md:w-[200px]  py-3 rounded-lg font-bold text-white my-2 transition-all duration-500 hover:-translate-y-2"
               style="box-shadow: 5px 5px 8px #8d6327"
             >
               MOOKY Presale
             </button>
+          </a>
           </div>
 
           <img
@@ -1266,12 +1272,11 @@
               Follow us for more information
             </h1>
             <p class="py-5 leading-[20px] font-normal text-[16px] font-[Inter]">
-              We would really love if you follow all of our socials and give us
-              a shout out. Be a good friend, no monkey business!
+              Mooky would love if you follow us on socials. Be a good friend to Mooky!
             </p>
             <div class="flex md:gap-10 gap-8 px-5 mt-12">
               <div
-                class="xl:w-[100px] xl:h-[100px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
+                class="xl:w-[80px] xl:h-[80px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
               >
                 <a class="p-2">
                   <img
@@ -1283,7 +1288,7 @@
               </div>
 
               <div
-                class="xl:w-[100px] xl:h-[100px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
+                class="xl:w-[80px] xl:h-[80px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
               >
                 <a class="p-2">
                   <img
@@ -1294,7 +1299,7 @@
                 </a>
               </div>
               <div
-                class="xl:w-[100px] xl:h-[100px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
+                class="xl:w-[80px] xl:h-[80px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
               >
                 <a class="p-2">
                   <img
@@ -1305,7 +1310,7 @@
                 </a>
               </div>
               <div
-                class="xl:w-[100px] xl:h-[100px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
+                class="xl:w-[80px] xl:h-[80px] md:h-16 md:w-16 h-12 w-12 bg-white flex justify-center items-center rounded-2xl cursor-pointer"
               >
                 <a class="p-2">
                   <img

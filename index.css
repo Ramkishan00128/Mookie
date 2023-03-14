@@ -232,22 +232,27 @@ height: 80px;
 /* ----------------navigation================ */
 
 .topnav {
-  overflow: hidden;
+  /* border: 3px solid red; */
+  /* overflow: hidden; */
   background-color: #a85913;
   position: relative;
 }
 
 .topnav #myLinks {
+  
   display: none;
+  font-family: "iCiel-Cadena";
+  background-color: #FFEA79;
+
 }
 
 .topnav a {
-  color: white;
+  color: #EC8424;
   padding: 8px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
+  text-align: center;
   display: block;
-  border-bottom: 1px solid #643205;
 }
 
 .topnav a.icon {
@@ -260,8 +265,8 @@ height: 80px;
 }
 
 #myLinks a:hover {
-  background-color: #643205;
-  color: white;
+  background-color: #f7de53;
+
 }
 
 /* ==================== zoom mooky logo ========================= */
