@@ -17,7 +17,6 @@ function close() {
   closebtn.style.display = "none";
 }
 
-// ------------------------------parallax effect -------------------
 
 const accordion = document.querySelectorAll(".content-container");
 
@@ -47,6 +46,9 @@ function myFunction() {
 //   // el.style.top = top;
 //   console.log("is it working ");
 // });
+// ------------------------------parallax effect -------------------
+
+
 (function () {
   // Add event listener
   document.addEventListener("mousemove", parallax);
