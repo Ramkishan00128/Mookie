@@ -1,6 +1,8 @@
 let menuOpenbBtn = document.getElementById("menuopen");
 let closebtn = document.getElementById("closebtn");
 let blurbg = document.getElementById("blurbg");
+let form = document.getElementById("form");
+
 menuOpenbBtn.addEventListener("click", open);
 closebtn.style.display = "none";
 function open() {
@@ -16,7 +18,6 @@ function close() {
 
   closebtn.style.display = "none";
 }
-
 
 const accordion = document.querySelectorAll(".content-container");
 
@@ -47,7 +48,6 @@ function myFunction() {
 //   console.log("is it working ");
 // });
 // ------------------------------parallax effect -------------------
-
 
 (function () {
   // Add event listener
@@ -81,3 +81,36 @@ function myFunction() {
     elem.style.backgroundPosition = x;
   }
 })();
+
+///NewsLetter Form
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let email = document.getElementById("email").value;
+  console.log(email);
+
+  try {
+    // fetch("http://localhost:3000/api/newsletter", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json; charset=UTF-8",
+    //   },
+
+    //   body: JSON.stringify({
+    //     email: email,
+    //   }),
+    // });
+    fetch("http://localhost:3000/api/newsletter", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: "example@example.com" }),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
+  } catch (err) {
+    console.log(err);
+  }
+});
